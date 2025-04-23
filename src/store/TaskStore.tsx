@@ -51,3 +51,4 @@ export const useTaskStore = create<TaskState>((set, get) => ({
         await AsyncStorage.setItem(TASK_STORAGE_KEY, JSON.stringify(updatedTasks));
     },
 }));
+

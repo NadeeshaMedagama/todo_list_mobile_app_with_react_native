@@ -48,25 +48,25 @@ export default function TaskItem({task, isOpen, onToggle}: Props) {
 
             {showDeleteModal && (
                 <View style={styles.overlay}>
-                <View style={styles.modal}>
-                    <Text style={styles.modalText}>Delete this task?</Text>
-                    <View style={styles.modalButtons}>
-                        <TouchableOpacity
-                            onPress={() => {
-                                removeTask(task.id);
-                                setShowDeleteModal(false);
-                            }}
-                            style={styles.modalButton}>
-                            <Text style={styles.modalButtonText}>Yes</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            onPress={() => setShowDeleteModal(false)}
-                            style={styles.modalButton}>
-                            <Text style={styles.modalButtonText}>No</Text>
-                        </TouchableOpacity>
+                    <View style={styles.modal}>
+                        <Text style={styles.modalText}>Delete this task?</Text>
+                        <View style={styles.modalButtons}>
+                            <TouchableOpacity
+                                onPress={() => {
+                                    removeTask(task.id);
+                                    setShowDeleteModal(false);
+                                }}
+                                style={styles.modalButton}>
+                                <Text style={styles.modalButtonText}>Yes</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                onPress={() => setShowDeleteModal(false)}
+                                style={styles.modalButton}>
+                                <Text style={styles.modalButtonText}>No</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
-               </View>
             )}
 
             {showEditModal && (
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     },
     overlay: {
         position: 'absolute',
-        top: 20,
+        top: 0,
         left: 0,
         right: 0,
         bottom: 0,
@@ -144,3 +144,4 @@ const styles = StyleSheet.create({
     },
 
 });
+
