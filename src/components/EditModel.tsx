@@ -32,22 +32,22 @@ export default function EditModal({task, onClose}: Props) {
         <Modal transparent animationType="fade">
             <View style={styles.overlay}>
                 <View style={styles.modal}>
-                    <Text style={styles.label}>Title</Text>
+                    {/*<Text style={styles.label}>Mini Input</Text>*/}
                     <TextInput
                         style={styles.input}
                         value={title}
                         onChangeText={setTitle}
-                        placeholder="Enter title..."
-                        placeholderTextColor="#FFA500"
+                        placeholder="Mini Input..."
+                        placeholderTextColor="#fff"
                     />
 
-                    <Text style={styles.label}>Description</Text>
+                    {/*<Text style={styles.label}>Max Input</Text>*/}
                     <TextInput
                         style={styles.textArea}
                         value={body}
                         onChangeText={setBody}
-                        placeholder="Enter description..."
-                        placeholderTextColor="#FFA500"
+                        placeholder="Max Input..."
+                        placeholderTextColor="#fff"
                         multiline
                     />
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     overlay: {
         flex: 1,
         backgroundColor: 'rgba(0,0,0,0.8)',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'center',
     },
     modal: {
@@ -78,11 +78,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#111',
         borderRadius: 12,
         padding: 20,
-        borderColor: '#FFA500',
+        borderColor: 'black',
         borderWidth: 1,
     },
     label: {
-        color: '#FFA500',
+        color: '#fff',
         marginBottom: 6,
         fontWeight: '600',
     },
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         padding: 10,
         color: '#fff',
-        height: 100,
+        height: 240,
         textAlignVertical: 'top',
         marginBottom: 20,
     },
@@ -109,16 +109,19 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     button: {
+        flex: 1,
+        marginHorizontal: 8,
         borderColor: '#FFA500',
         borderWidth: 1,
         borderRadius: 6,
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
         minWidth: 100,
         alignItems: 'center',
     },
     buttonText: {
-        color: '#FFA500',
+        color: '#fff',
         fontWeight: 'bold',
     },
 });
+
