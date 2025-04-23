@@ -47,6 +47,7 @@ export default function TaskItem({task, isOpen, onToggle}: Props) {
             </TouchableOpacity>
 
             {showDeleteModal && (
+                <View style={styles.overlay}>
                 <View style={styles.modal}>
                     <Text style={styles.modalText}>Delete this task?</Text>
                     <View style={styles.modalButtons}>
@@ -65,6 +66,7 @@ export default function TaskItem({task, isOpen, onToggle}: Props) {
                         </TouchableOpacity>
                     </View>
                 </View>
+               </View>
             )}
 
             {showEditModal && (
@@ -95,7 +97,7 @@ const styles = StyleSheet.create({
     },
     modal: {
         position: 'absolute',
-        top: '35%',
+        top: '50%',
         left: '10%',
         right: '10%',
         backgroundColor: '#111',
@@ -116,14 +118,29 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
     },
     modalButton: {
+        flex: 1,
+        marginHorizontal: 8,
         paddingVertical: 8,
         paddingHorizontal: 16,
         borderColor: '#FFA500',
         borderWidth: 1,
         borderRadius: 6,
+        alignItems: 'center',
     },
     modalButtonText: {
         color: '#FFA500',
         fontWeight: 'bold',
     },
+    overlay: {
+        position: 'absolute',
+        top: 20,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        zIndex: 99,
+    },
+
 });
