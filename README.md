@@ -1,3 +1,28 @@
+# To-Do List App
+
+A simple React Native To-Do List application with persistent storage.
+
+## Features
+- Add new tasks
+- Mark tasks as complete
+- Delete tasks
+- Data persistence using AsyncStorage
+
+## Installation
+1. Clone this repository
+2. Run `npm install`
+3. For iOS: `cd ios && pod install && cd ..`
+
+## Running the App
+- Android: `npx react-native run-android`
+- iOS: `npx react-native run-ios`
+
+## Design
+Figma Design: [Link to Figma Design](https://www.figma.com/design/0voUh3g2fDdGMbKNibqygj/To-Do-List-(Community)?node-id=42-188&p=f&t=PYitSXbMjt9piMOo-0)
+
+## Demo Video
+[Link to demo video](https://todo-list-mobile-app-demo-video.netlify.app/)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
