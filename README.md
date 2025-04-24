@@ -18,7 +18,7 @@ A simple React Native To-Do List application with persistent storage.
 - iOS: `npx react-native run-ios`
 
 ## Design
-Figma Design: [Link to Figma Design](https://www.figma.com/design/0voUh3g2fDdGMbKNibqygj/To-Do-List-(Community)?node-id=42-188&p=f&t=PYitSXbMjt9piMOo-0)
+Figma Design: [Link to Figma Design](https://www.figma.com/design/zHw0qKffmEiVwFBDBos39l/Todo-List-for-Mobile-App?node-id=0-1&t=bELXsPSHsiSMNHpD-1)
 
 ## Demo Video
 [Link to demo video](https://todo-list-mobile-app-demo-video.netlify.app/)
